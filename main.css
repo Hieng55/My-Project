@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    --color-main: blueviolet;
+}
+img {
+    width: 100%;
+}
+.header .navbar {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    text-align: center;
+}
+.header .navbar h1 {
+    margin-bottom: 20px;
+    color: var(--color-main);
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 20px 10px;
+}
+
+.list .box .bg {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.list .box:hover .bg {
+    width: 100%;
+    background-color: blueviolet;
+    height: 100%;
+    opacity: 0.5;
+}
+.list .box {
+    position: relative;
+    width: 33%;
+    height: 300px;
+    margin-bottom: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.list .box .bg {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.list .box h2 {
+    position: absolute;
+    left: -200px;
+    top: 0;
+    font-size: 100px;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    transition: 0.5s;
+    opacity: 1;
+}
+.list .box:hover h2 {
+    left: 10px;
+    opacity: 1;
+}
+.list .box h4 {
+    position: absolute;
+    right: -80px;
+    bottom: 10px;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
+}
+.list .box .text {
+    bottom: 40px;
+}
+.list .box:hover h4 {
+    right: 10px;
+    opacity: 1;
+    font-family: "Montserrat", sans-serif;
+}
+
+.list .box:hover img {
+    transform: scale(1.1);
+}
+.list .item {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* background-color: #f5dcff; */
+}
+.list .item img {
+    transition: 0.5s;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    object-fit: fill;
+}
+@media (max-width: 1233px) {
+    .list .box {
+        width: 49%;
+    }
+}
+@media (max-width: 833px) {
+    .list {
+        justify-content: center;
+    }
+    .list .box {
+        width: 80%;
+    }
+}
+@media (max-width: 525px) {
+    .list .box {
+        width: 90%;
+        height: 250px;
+    }
+}
+@media (max-width: 450px) {
+    .list .box {
+        width: 100%;
+        height: 250px;
+    }
+}
