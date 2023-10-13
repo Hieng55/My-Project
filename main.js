@@ -84,9 +84,17 @@ const products = [
         image: "img/Car.png",
         name: "Car Model",
         tech: "HTML,CSS,SASS,JS",
-        color: "orange",
+        color: "#e28473",
         url: "https://hieng55.github.io/Car-Model/",
     },
+    {
+        id: 12,
+        image: "img/orfarmfe.png",
+        name: "Or farm",
+        tech: "HTML,CSS,JS,JQUERY",
+        color: "orange",
+        url: "https://hieng55.github.io/Market-Orfarm/",
+    }
 ];
 const list = document.querySelector(".list");
 function renderProduct(items) {
