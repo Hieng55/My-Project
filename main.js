@@ -45,7 +45,7 @@ const products = [
         name: "TO DO LIST",
         tech: "HTML,CSS,JS",
         color: "#b0b0b3",
-        url: "https://hieng55.github.io/To-Do-List/",
+        url: "https://hieng55.github.io/TODO/",
     },
     {
         id: 7,
