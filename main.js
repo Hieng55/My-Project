@@ -19,7 +19,7 @@ const products = [
         id: 3,
         image: "img/DELICI-RESTAURANT.png",
         name: "Restaurant DELICI",
-        tech: "HTML,CSS,BOOTSTRAP,JS,JQUERY",
+        tech: "HTML,CSS,BOOTSTRAP 5,JS,JQUERY",
         color: "#98111f",
         url: "https://hieng55.github.io/DELICI-RESTAURANT/",
     },
